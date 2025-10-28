@@ -6,86 +6,42 @@
     <meta name="tekijä" content="Jarmo Lipsanen">
     <meta name="kuvaus" content="Pesismentori - Menesty pesäpallossa pesismentorin avulla">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pesismentori</title>
+    <title>Slideshow</title>
     <link rel="icon" href="images/mestarit.jpg" type="image/x-icon">
-    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <h1>Löydä <strong>pesismentori</strong> ja menesty!</h1>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Koti</a></li>
-                <li><a href="aloita-pesisaivo.html">Aloita aivotreenit</a></li>
-                <li><a href="tästä_voit_jatkaa.html">100 päivää / 100 korttia</a></li>
-                <li><a href="contact.html">Yhteystiedot</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-
-        <img src="images/kuva_30_cm_ratkaisee.jpg" alt="pelaajan aivokäyttäytyminen">
-        <p>Mikset mene katsomaan
-            <a href="aloita-pesisaivo.html">sivua 2</a>
-            tai sitten voit myös jatkaa sivulle
-            <a href="https://www.sciencedirect.com/science/article/pii/S0160289625000649?via%3Dihub">lisäopiskelua
-                varten.</a>
-        </p>
-
-
-        <section id="tähän tulee section 1">
-            <h2>tähän tulee section 1</h2>
-            <p>Olen pitkän linjan ”pesäpalloammattilainen”, jolla on vahva intohimo ja kokemus niin kentältä,
-                koulutuksesta kuin
-                hallintotyöstäkin. Pelaajaurani aikana pelasin koko pelaajapolun läpi, 12-vuotiaasta lähtien, miesten
-                mestaruusjuhliin
-                saakka.</p>
-            <p>Tuona aikana sain kokea sekä henkilökohtaisia että joukkueena saavutettuja huippuhetkiä, ja oppia
-                erityisesti henkisen
-                valmentautumisen tuomat hyödyt. Pelaajana opin joukkuepelaamisen, paineensietokyvyn,
-                suunnitelmallisuuden,
-                tavoitteellisen harjoittelun, testauksen ja tilastoinnin merkityksen – arvoja ja tietoja, joita haluan
-                nyt välittää ja
-                jakaa eteenpäin sekä nykyisille että tuleville pelaajille mentorin roolissa.</p>
-            <p>Ammatillinen opettajanpätevyyteni ja kokemukseni koulutustehtävissä tarjoavat vahvan pedagogisen pohjan
-                mentoroinnille.
-                Olen toiminut useita vuosia oppilaitoksessa, jossa olen kouluttanut nuoria sekä tukenut heidän
-                kokonais-valtaista
-                kasvuaan.</p>
-            <p>Pesäpalloliiton johtokunnan ja Superpesis Oy:n hallituksen jäsenyys on tuonut arvokasta kokemusta lajin
-                strategisesta
-                kehittämisestä, päätöksenteosta ja valtakunnallisen junioritoiminnan tukemisesta. Tämän myötä ymmärrän
-                hyvin
-                lajikulttuurin nykytilaa, tulevaisuuden suuntaviivoja ja sen, millaisia henkisiä valmiuksia nuorilta
-                pelaajilta tullaan
-                jatkossa edellyttämään.</p>
-        </section>
-
-        <section id="tähän tulee section 2">
-            <h2>Tähän tulee section 2</h2>
-            <p>tässä on paragrafi eka</p>
-            <p>tässä on paragrafi toka</p>
-            <h3>Hyvät syyt aloittaa:</h3>
-
-            <ul>
-                <li>full-body workout</li>
-                <li>improves problem solvimg</li>
-                <li>builds mental resilience</li>
-                <li>and much more ...</li>
-            </ul>
-            <p>Kiinnostuitko menestyksestä?
-                <a href="tästä_voit_jatkaa.html">Tästä voit jatkaa.
-            </p>
-        </section>
-
-    </main>
-    <footer>
-        &lt;&lt;&lt; &copy; <a href="aloita-pesisaivo.html">Pesismentori</a> &gt;&gt;&gt;
-        <p>C Pesismentori; kaikki oikeudet pidätetään.</p>
-        <p><a href="#">Takaisin ylös</a></p>
-        <p><a href="/">Etusivulle</a></p>
-    </footer>
+    <div class="slider-container">
+        <div class="slide">
+            <img src="images/slide1.jpeg" class="slide-image" alt="Slide 1">
+            <h1>1</h1>
+        </div>
+        <div class="slide">
+            <img src="images/slide2.jpeg" class="slide-image" alt="Slide 2">
+            <h1>2</h1>
+        </div>
+        <div class="slide">
+            <img src="images/slide3.jpeg" class="slide-image" alt="Slide 3">
+            <h1>3</h1>
+        </div>
+        <div class="slide">
+            <div>
+                <img src="images/person-img.jpg" class="person-image" alt="Slide 4">
+                <h3>mestarit</h3>
+                <h1>4</h1>
+            </div>
+        </div>
+    </div>
+    <div class="btn-container">
+        <button type="button" class="prevBtn">
+            prev
+        </button>
+        <button type="button" class="nextBtn">
+            next
+        </button>
+    </div>
+    <script src="app.js"></script>
 </body>
 
 </html>
